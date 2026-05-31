@@ -24,7 +24,7 @@ jobs:
           cache: maven
 
       - name: Run only generated tests
-        run: mvn test -Dtest="generated.*"
+        run: mvn test -Dtest="generated.*Test"
 
       - name: Upload test reports
         if: always()
