@@ -507,8 +507,20 @@
             <version>3.2.5</version>
         </plugin>
 
+        <plugin>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>maven-bundle-plugin</artifactId>
+            <version>5.1.9</version>
+            <extensions>true</extensions>
 
-      <plugin>
+            <configuration>
+                <instructions>
+                    <_noimportjava>true</_noimportjava>
+                </instructions>
+            </configuration>
+        </plugin>
+
+        <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <executions>
